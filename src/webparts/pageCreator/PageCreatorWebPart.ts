@@ -87,7 +87,7 @@ export default class PageCreatorWebPart extends BaseClientSideWebPart<IPageCreat
   }
 
   public async render(): Promise<void> {
-
+    //Test Run--->
     //var currentPageUrl = this.context.pageContext.web.absoluteUrl + this.context.pageContext.site.serverRequestPath;
 
     // console.log(currentPageUrl);
