@@ -1,0 +1,100 @@
+@import "~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss";
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/*
+.tileImage{
+.RohanContainer{
+    width:100%;
+    h3{
+      background-color:blueviolet;
+      font-style: italic;
+    }
+  }
+}
+
+.root-83{
+  display: block !important;
+}*/
+
+.tileImage {
+  /*
+                @media only screen and (min-width: 1900px) {
+                    .container {
+                        background-size: 917px 297px;
+                    }
+                }
+
+                @media only screen and (min-width: 1300px) {
+                    .container {
+                        background-size: 100%;
+                    }
+                              }*/
+                              font-family: 'Oswald' !important;
+  .RohanContainer {
+    // font-family: "Oswald" !important;
+    font-family: 'Oswald' !important;
+    width: 100%;
+    min-height: 200px;
+    //background-image: url(https://bgsw1.sharepoint.com/sites/Testing_Publishing/SiteAssets/Brand_Spotlight/UStudio.png);
+    /* width: 800px; */
+    /* max-width: 90%; */
+    overflow: hidden;
+    background-position: right center;
+    // background-attachment: local;
+
+    img {
+      display: block;
+      height: auto;
+      //max-width: 100%;
+      width: 100%;
+      // max-height: none;
+      //background-image: url(https://bgsw1.sharepoint.com/sites/Testing_Publishing/SiteAssets/Brand_Spotlight/UStudio.png);
+    }
+
+    .callToAction {
+      font-family: "Oswald" !important;
+      display: block;
+      float: left;
+      width: 80%;
+      background: #565656BF;
+      margin-top: 1.5em;
+      //vertical-align: middle;
+      text-align: right;
+      font-size: 3em;
+      padding: 0.25em 0.5em 0.25em calc(10% + 2em);
+      color: #FFFFFF;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+  }
+
+  .callToAction:hover {
+    text-decoration: none;
+    color:#FFFFFF;
+    background-color: rgba(86,86,86,0.75);                                                                                                                                                                                                                                                                                                               
+  }
+
+  i {
+    margin-left: 0.35em;
+    font-size: 1.1em;
+    color: #FFFFFF;
+  }
+
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+}
+
+.containermain {
+  max-width: 700px;
+  margin: 0px auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+
