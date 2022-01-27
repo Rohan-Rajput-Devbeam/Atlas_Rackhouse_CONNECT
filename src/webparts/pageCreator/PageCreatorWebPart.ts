@@ -120,6 +120,7 @@ export default class PageCreatorWebPart extends BaseClientSideWebPart<IPageCreat
     <div class="ms-rte-embedcode ms-rte-embedwp" >
     <div class="${styles.RohanContainer}"
     style="background-image: url(${escape(this.properties.ImageProperty)});
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
     background-repeat: no-repeat;width:100%;height:160px;
     background-size:cover;
     background-position: center;">
