@@ -139,7 +139,13 @@ export default class PageCreatorWebPart extends BaseClientSideWebPart<IPageCreat
       alert("Something went wrong :" + exception);
     });
     await sp.web.getFolderByServerRelativePath("Rackhouse Documents/" + this.properties.RackID).delete().then(function (response) {
-      console.log("Folder Deleted !");
+      console.log("Rackhouse Documents- Folder Deleted !");
+    }).catch(function (exception) {
+      alert("Something went wrong :" + exception);
+    });
+
+    await sp.web.getFolderByServerRelativePath("Rackhouse Archive/" + this.properties.RackID).delete().then(function (response) {
+      console.log("Rackhouse Archive - Folder Deleted !");
     }).catch(function (exception) {
       alert("Something went wrong :" + exception);
     });
@@ -358,6 +364,10 @@ export default class PageCreatorWebPart extends BaseClientSideWebPart<IPageCreat
 
                         //Creation of A new Folder on saving the webpart...
                         const folderAddResult = await sp.web.rootFolder.folders.getByName("Rackhouse Documents").folders.add("Rack" + this.properties.TimeStamp);
+
+                           //Creation of A new Folder in Rackhouse Archive Library saving the webpart...
+                           const folderAddResult1 = await sp.web.rootFolder.folders.getByName("Rackhouse Archive").folders.add("Rack" + this.properties.TimeStamp);
+
                         //------------>
                         //console.log(folderAddResult.data.ServerRelativeUrl);
                         var folderurl = folderAddResult.data.ServerRelativeUrl;// Get created folders url...
@@ -625,6 +635,10 @@ export default class PageCreatorWebPart extends BaseClientSideWebPart<IPageCreat
 
                       //Creation of A new Folder on saving the webpart...
                       const folderAddResult = await sp.web.rootFolder.folders.getByName("Rackhouse Documents").folders.add("Rack" + this.properties.TimeStamp);
+
+                       //Creation of A new Folder in Rackhouse Archive Library saving the webpart...
+                       const folderAddResult1 = await sp.web.rootFolder.folders.getByName("Rackhouse Archive").folders.add("Rack" + this.properties.TimeStamp);
+
                       //------------>
                       //console.log(folderAddResult.data.ServerRelativeUrl);
                       var folderurl = folderAddResult.data.ServerRelativeUrl;// Get created folders url...
